@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 1400px;
+      margin: 0 auto;
+      background-color:  #151719;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .absolute {  position: absolute; }
+    .text-white { color: white}
+    .version { top: 20px; left: 20px; }
+    .author{ bottom: 20px; left: 20px;}
+    .waviy {
+      margin: 0 auto;
+
+      position: relative;
+      -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+      font-size: 60px;
+    }
+    .waviy span {
+      position: relative;
+      display: inline-block;
+      color: #fff;
+      text-transform: uppercase;
+      animation: waviy 1s infinite;
+      animation-delay: calc(.1s * var(--i));
+      
+    }
+    @keyframes waviy {
+      0%,40%,100% {
+        transform: translateY(0)
+      }
+      20% {
+        transform: translateY(-20px)
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+    <p class="absolute text-white version">Version 1.0.0</p>
+    <p class="absolute text-white author">Author: Phan Hồng Quân</p>
+    <div class="waviy">
+      <span style="--i:1">I</span>
+      <span style="--i:2">F</span>
+      <span style="--i:3">E</span>
+      <span style="--i:4">X</span>
+      <span style="--i:5"></span>
+      <span style="--i:6"></span>
+      <span style="--i:7">A</span>
+      <span style="--i:8">P</span>
+      <span style="--i:9">P</span>
+      <span style="--i:10"></span>
+      <span style="--i:11"></span>
+      <span style="--i:12">S</span>
+      <span style="--i:13">E</span>
+      <span style="--i:14">R</span>
+      <span style="--i:15">V</span>
+      <span style="--i:16">I</span>
+      <span style="--i:17">C</span>
+      <span style="--i:18">E</span>
+    </div>
+</body>
+</html>
