@@ -25,7 +25,7 @@ app.use(function (req, res, next) {
 });
 
 if (process.env.NODE_ENV !== "test" || !module.parent) {
-  app.listen(8000, () => console.info("Server is running on port " + 8000));
+  app.listen(process.env.PORT || 8000, () => console.info("Server is running on port " + process.env.PORT || 5000));
 }
 
 module.exports = app;
