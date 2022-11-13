@@ -25,7 +25,8 @@
     "express-http-proxy": "^1.6.3",
     "mocha": "^10.0.0",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "pm2": "^5.2.2"
   },
   "devDependencies": {
     "@types/node": "^18.7.23"
